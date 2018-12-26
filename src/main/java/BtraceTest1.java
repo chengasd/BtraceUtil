@@ -133,7 +133,7 @@ public class BtraceTest1 {
 
 
     /**
-     * 分析哪个方法执行了System.gc()
+     * 分析哪个方法执行了System.gc() 
      */
     @OnMethod(clazz = "java.lang.System", method = "gc", location = @Location(Kind.ENTRY))
     public static void onSystemGC() {
